@@ -1,7 +1,7 @@
+
 import time
 import logging
-
-from observer.screen_capture import capture_screen_text
+from observer.screen_ocr import capture_screen_text
 from control.state import load_recording_state
 from memory.logger import log_event
 
@@ -16,6 +16,7 @@ def main():
 
     while True:
         recording = load_recording_state()
+
 
         if recording:
             try:
